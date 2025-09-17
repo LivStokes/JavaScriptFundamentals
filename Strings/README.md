@@ -77,11 +77,35 @@ If instead we set it to 42, then the return value is 53. This is where we find t
 
 # SubString
 
-To extract part of a string. For that we can use the method substring.
-- sentence.substring(53) >> "dog barked was it really lazy?"
+To extract part of a string we can use the method substring.
+- sentence.substring(53) 
+"dog barked was it really lazy?"
+
 This will return everything in the string sentence, from the character at position 53.
 
+We can use two parameters. If we do the second parameter is the end index, where to stop accessing the string sentence. What value should we use to get the value ‘dog’ return?
+- sentence.substring(53, 56)
 
+{
+    let sentence = 'The quick brown fox jumped over the lazy dog';
+    <
+    sentence += ". If the dog barked was it really lazy?"
+    < "The quick brown fox jumped over the lazy dog. If the dog barked was it really lazy?"
+    sentence.substring(53)
+    < "dog barked was it really lazy?"
+    sentence.substring(53, 56)
+    < "dog"
+}
 
+We can access a sub string from the sentence using a different method, slice. At first it seems identical to substring.
+- sentence.slice(53, 56)
 
+Where it differs is when we use minus values for parameters.
+- sentence.slice(-5, -1)
+Returns 'lazy'
 
+A minus parameter will start at the end of the string and count backwards. Do this with the method substring and you get an empty string returned, because all parameter values below zero are changed to zero.
+- sentence.substring(-5, -1)
+Becomes
+- sentence.substring(0, 0)
+With a start and end index of zero we get no characters returned.
