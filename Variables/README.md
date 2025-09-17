@@ -16,7 +16,7 @@ JavaScript variables can be declared in 4 ways:
 . Automatically (Not Recommended)
 
 To open the console log where I can enter code.
-> Open Chrome. ctrl, shift, i.
+Open Chrome. ctrl, shift, i.
 
 e.g.
 - let x = 3
@@ -29,7 +29,7 @@ By using const, we create a variable that cannot be changed. We can see the valu
 Constants can make your code more robust ensuring values that shouldn’t change can’t be changed.
 
 e.g.
-const z = 7
+- const z = 7
 by entering z = 8, an error message will appear.
 
 # Variable Strings
