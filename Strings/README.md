@@ -107,5 +107,5 @@ Returns 'lazy'
 A minus parameter will start at the end of the string and count backwards. Do this with the method substring and you get an empty string returned, because all parameter values below zero are changed to zero.
 - sentence.substring(-5, -1)
 Becomes
-- sentence.substring(0, 0)
+- sentence.substring(0, 0) 
 With a start and end index of zero we get no characters returned.
